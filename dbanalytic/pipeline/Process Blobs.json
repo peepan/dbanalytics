@@ -247,7 +247,25 @@
 								"secureOutput": false,
 								"secureInput": false
 							},
-							"userProperties": []
+							"userProperties": [],
+							"typeProperties": {
+								"storedProcedureName": "[dbo].[uspUpdateBlobMetadata]",
+								"storedProcedureParameters": {
+									"dlsLocation": {
+										"value": null
+									},
+									"recordId": {
+										"value": {
+											"value": "@{item().RecordId}",
+											"type": "Expression"
+										}
+									}
+								}
+							},
+							"linkedServiceName": {
+								"referenceName": "peeyushanalyticsdbLS",
+								"type": "LinkedServiceReference"
+							}
 						}
 					]
 				}
