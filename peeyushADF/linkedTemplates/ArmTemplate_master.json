@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "peeyushADF"
 		},
+		"peeyushanalyticsdbLS_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'peeyushanalyticsdbLS'"
+		},
 		"peeyushkeyvaultLS_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://peeyushkeyvaultnew.vault.azure.net/"
@@ -37,6 +41,9 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"peeyushanalyticsdbLS_connectionString": {
+						"value": "[parameters('peeyushanalyticsdbLS_connectionString')]"
 					},
 					"peeyushkeyvaultLS_properties_typeProperties_baseUrl": {
 						"value": "[parameters('peeyushkeyvaultLS_properties_typeProperties_baseUrl')]"
