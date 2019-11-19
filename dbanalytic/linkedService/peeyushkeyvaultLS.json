@@ -1,0 +1,10 @@
+{
+	"name": "peeyushkeyvaultLS",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://peeyushkeyvaultnew.vault.azure.net/"
+		}
+	}
+}
