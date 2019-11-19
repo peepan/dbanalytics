@@ -70,7 +70,10 @@
 							"userProperties": [],
 							"typeProperties": {
 								"variableName": "blobPath",
-								"value": ""
+								"value": {
+									"value": "@{item().Path}\n",
+									"type": "Expression"
+								}
 							}
 						},
 						{
@@ -81,13 +84,23 @@
 							"userProperties": [],
 							"typeProperties": {
 								"variableName": "blobName",
-								"value": ""
+								"value": {
+									"value": "@{item().BlobName}",
+									"type": "Expression"
+								}
 							}
 						},
 						{
 							"name": "Copy data to Synapse",
 							"type": "Copy",
-							"dependsOn": [],
+							"dependsOn": [
+								{
+									"activity": "Set Container",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
 							"policy": {
 								"timeout": "7.00:00:00",
 								"retry": 0,
@@ -103,7 +116,14 @@
 						{
 							"name": "Update Processable Status",
 							"type": "SqlServerStoredProcedure",
-							"dependsOn": [],
+							"dependsOn": [
+								{
+									"activity": "Copy data to Synapse",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
 							"policy": {
 								"timeout": "7.00:00:00",
 								"retry": 0,
