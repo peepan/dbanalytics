@@ -63,14 +63,22 @@
 							"name": "Set blobPath",
 							"type": "SetVariable",
 							"dependsOn": [],
-							"userProperties": []
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "blobPath",
+								"value": ""
+							}
 						},
 						{
 							"name": "Set blobName",
 							"description": "Set blobPath",
 							"type": "SetVariable",
 							"dependsOn": [],
-							"userProperties": []
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "blobName",
+								"value": ""
+							}
 						}
 					]
 				}
