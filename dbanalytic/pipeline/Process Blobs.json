@@ -135,8 +135,8 @@
 									"mappings": [
 										{
 											"source": {
-												"type": "String",
-												"ordinal": 2
+												"name": "Region",
+												"type": "String"
 											},
 											"sink": {
 												"name": "Region",
@@ -145,8 +145,8 @@
 										},
 										{
 											"source": {
-												"type": "String",
-												"ordinal": 3
+												"name": "Plant",
+												"type": "String"
 											},
 											"sink": {
 												"name": "Plant",
@@ -155,8 +155,8 @@
 										},
 										{
 											"source": {
-												"type": "String",
-												"ordinal": 4
+												"name": "DeviceId",
+												"type": "String"
 											},
 											"sink": {
 												"name": "DeviceId",
@@ -165,8 +165,8 @@
 										},
 										{
 											"source": {
-												"type": "String",
-												"ordinal": 5
+												"name": "Temperature",
+												"type": "String"
 											},
 											"sink": {
 												"name": "Temperature",
@@ -175,8 +175,8 @@
 										},
 										{
 											"source": {
-												"type": "String",
-												"ordinal": 6
+												"name": "TemperatureDescription",
+												"type": "String"
 											},
 											"sink": {
 												"name": "TemperatureDescription",
@@ -185,8 +185,8 @@
 										},
 										{
 											"source": {
-												"type": "String",
-												"ordinal": 7
+												"name": "Humidity",
+												"type": "String"
 											},
 											"sink": {
 												"name": "Humidity",
@@ -194,6 +194,10 @@
 											}
 										},
 										{
+											"source": {
+												"name": "RecordedTime",
+												"type": "String"
+											},
 											"sink": {
 												"name": "RecordedTime",
 												"type": "DateTime"
