@@ -38,6 +38,10 @@
 					}
 				],
 				"typeProperties": {
+					"items": {
+						"value": "@activity('LookupProcessableBlobs').output.value",
+						"type": "Expression"
+					},
 					"isSequential": true,
 					"activities": [
 						{
