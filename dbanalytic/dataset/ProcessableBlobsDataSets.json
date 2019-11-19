@@ -1,5 +1,5 @@
 {
-	"name": "ProcessableBlobs",
+	"name": "ProcessableBlobsDataSets",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "peeyushanalyticsdbLS",
