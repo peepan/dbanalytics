@@ -1,0 +1,19 @@
+{
+	"name": "AzureSynapseAnalyticsLS",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDW",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=peeyushsqlserver.database.windows.net;Initial Catalog=peeyushSynapseDW;User ID=peeyushadmin",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "peeyushkeyvaultLS",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sqlpassword"
+			}
+		}
+	}
+}
