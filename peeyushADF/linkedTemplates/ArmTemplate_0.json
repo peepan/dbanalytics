@@ -167,7 +167,8 @@
 								"referenceName": "ProcessableBlobsDataSets",
 								"type": "DatasetReference",
 								"parameters": {}
-							}
+							},
+							"firstRowOnly": false
 						}
 					}
 				],
