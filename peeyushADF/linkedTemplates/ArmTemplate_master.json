@@ -11,6 +11,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'peeyushanalyticsdbLS'"
 		},
+		"AzureBlobStorageLS_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorageLS'"
+		},
+		"AzureSynapseAnalyticsLS_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSynapseAnalyticsLS'"
+		},
 		"peeyushkeyvaultLS_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://peeyushkeyvaultnew.vault.azure.net/"
@@ -42,8 +50,14 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"AzureBlobStorageLS_connectionString": {
+						"value": "[parameters('AzureBlobStorageLS_connectionString')]"
+					},
 					"peeyushanalyticsdbLS_connectionString": {
 						"value": "[parameters('peeyushanalyticsdbLS_connectionString')]"
+					},
+					"AzureSynapseAnalyticsLS_connectionString": {
+						"value": "[parameters('AzureSynapseAnalyticsLS_connectionString')]"
 					},
 					"peeyushkeyvaultLS_properties_typeProperties_baseUrl": {
 						"value": "[parameters('peeyushkeyvaultLS_properties_typeProperties_baseUrl')]"

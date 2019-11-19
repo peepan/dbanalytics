@@ -8,6 +8,12 @@
 		"peeyushanalyticsdbLS_connectionString": {
 			"value": ""
 		},
+		"AzureBlobStorageLS_connectionString": {
+			"value": ""
+		},
+		"AzureSynapseAnalyticsLS_connectionString": {
+			"value": ""
+		},
 		"peeyushkeyvaultLS_properties_typeProperties_baseUrl": {
 			"value": "https://peeyushkeyvaultnew.vault.azure.net/"
 		}
