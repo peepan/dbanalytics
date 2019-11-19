@@ -64,7 +64,8 @@
 							],
 							"userProperties": [],
 							"typeProperties": {
-								"variableName": ""
+								"variableName": "container",
+								"value": "@substring(item().Path, 0, indexof(item().Path, item().BlobName))"
 							}
 						},
 						{
