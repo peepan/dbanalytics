@@ -25,6 +25,21 @@
 					},
 					"firstRowOnly": false
 				}
+			},
+			{
+				"name": "LoopProcessBlobs",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "LookupProcessableBlobs",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"typeProperties": {
+					"isSequential": true
+				}
 			}
 		],
 		"annotations": []
